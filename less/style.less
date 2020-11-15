@@ -1,0 +1,110 @@
+// Basic style variables
+
+// Color scheme
+@baseTextColor: #4E4E4E;
+@baseHeadingColor: #3F3F3F;
+@baseColor: #ffffff;
+
+@mainColor: #72AC6B;
+
+@activeButtonColor: #2C6D24;
+@dividerLinesColor: #A4A4A4;
+
+// Other base styles
+@baseShadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+@baseBorderRadius: 10px;
+
+// Main font style
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+// Basic styles to all elements
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+// Header
+.header {
+    height: 95px;
+    width: 100%;
+    padding: 20px 70px;
+    background-color: @baseColor;
+    color: @baseTextColor;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 270px;
+
+    img {
+        width: 100%;
+    }
+}
+
+// Menu
+.menu {
+    width: 500px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item {
+    border-radius: 999px;
+    text-decoration: none;
+    color: @baseTextColor;
+    display: block;
+
+    &-active {
+        padding: 7px 15px;
+        background-color: @mainColor;
+        text-decoration: none;
+        color: @baseColor;
+        box-shadow: @baseShadow;
+    }
+}
+
+// Header contacts
+.header-contact-row {
+    margin-bottom: 5px;
+    font-size: 22px;
+
+    i {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    span {
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: lightgray;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.header-contacts-divider {
+    width: 220px;
+    height: 1px;
+    background-color: @baseTextColor;
+}
+
+.header-contact-row:last-child {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
