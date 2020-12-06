@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
 }
 * {
   margin: 0;
@@ -82,4 +82,95 @@ body {
 .header-contact-row:last-child {
   margin-bottom: 0;
   margin-top: 5px;
+}
+.slider {
+  height: 635px;
+  width: 100%;
+  padding: 0 25px;
+  background-image: url(../image/home-slider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 80px 1fr 80px;
+  grid-column-gap: 65px;
+}
+.slider::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+.slider-button {
+  height: 76px;
+  width: 76px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  display: grid;
+  place-content: center;
+  z-index: 10;
+}
+.slider-button-arrow-left {
+  padding-right: 5px;
+}
+.slider-button-arrow-right {
+  padding-left: 5px;
+}
+.slider-title-block {
+  display: grid;
+  justify-content: start;
+  color: #ffffff;
+  text-shadow: 0 0 10px black;
+  z-index: 10;
+}
+.slider-title {
+  margin-bottom: 25px;
+  color: #ffffff;
+  display: grid;
+  font-size: 36pt;
+  grid-auto-flow: column;
+  justify-self: start;
+}
+.slider-title::before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 50px;
+  margin-right: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px 0 black;
+  position: relative;
+  top: 26px;
+}
+.slider-subtitle {
+  width: 900px;
+}
+.about-us-link {
+  height: 100px;
+  width: 100%;
+  padding: 0 50px;
+  background-color: #72AC6B;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.about-us-link .about-us-link-title {
+  color: #ffffff;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+.about-us-link .about-us-link-title .about-us-link-icon {
+  font-size: 28pt;
+  margin-right: 15px;
+}
+.about-us-link .about-us-link-title .about-us-link-heading {
+  font-size: 20pt;
 }
