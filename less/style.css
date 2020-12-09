@@ -712,3 +712,5 @@ body {
   width: 100%;
   background-image: url(../image/beta-google-maps-image.png);
 }
+@media (max-width: 800px) {
+}
