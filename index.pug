@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+    
+        //- The basic standard of site coding
+        meta(charset="UTF-8")
+
+        //- Adaptive website for different devices
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        //- Website title
+        title Great Timber LTD - Home
+
+        //- Connect the main style file
+        link(rel="stylesheet", href="../css/style.css")
+
+        //- Site tab icon
+        link(rel="shortcut icon" href="../img/website-logo.png" type="image/png")
+
+        //- Font awesome
+        script(src="https://kit.fontawesome.com/265d7c8059.js" crossorigin="anonymous")
+
+    body
+
+        //- Header
+        .header
+            
+            //- Logo
+            .logo
+                img(src="../img/fullsize-website-logo.png")
+
+            //- Menu
+            .menu
+                a.menu-item.menu-item-active(href="#") Homepage
+                a.menu-item(href="#") About
+                a.menu-item(href="#") Products
+                a.menu-item(href="#") Contacts
+
+            //- Header contacts
+            .header-contacts
+                .header-contact-row
+                    i.fas.fa-phone
+                    span +44(800) 82 9152
+                .header-contacts-divider
+                .header-contact-row
+                    i.fas.fa-map-marked-alt
+                    span Baker Street, 46B
+        
+        //- Slider
+        .slider
+            .slider-button.slider-button-arrow-left
+                img.slider-button-image(src="../img/arrow-left.png")
+            .slider-title-block
+                h1.slider-title What we do?
+                h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
+            .slider-button.slider-button-arrow-right
+                img.slider-button-image(src="../img/arrow-right.png")
+        
+        //- About us link
+        .about-us-link
+            .about-us-link-title
+                i.fas.fa-compass.about-us-link-icon
+                span.about-us-link-heading Timber for any of your construction and ideas
+            a.about-us-link-button(href="#")
+                span CLICK HERE
+                i.fas.fa-chevron-down
+
+        //- What we do?
+        .what-we-do
+            h1.green-heading What we do?
+            .what-we-do-box
+                .what-we-do-cards
+                    span.basic-heading Consectetuer
+                    .card-divider
+                    span.card-text Lorem ipsum dolor sit amet, couer adipscing elit. Praesent vestibuluolestie lacus. Aenean nonummy hendrerit mauris. Loros tutuos naifaides De ra lo de faut Lorem ipsum dolor sit amet consectetur adipisicing
+                    img.card-image(src="../image/card-image-first.png")
+                .what-we-do-cards
+                    span.basic-heading Adipiscing elit
+                    .card-divider
+                    span.card-text Lorem ipsum dolor sit amet, couer adipscing elit. Praesent vestibuluolestie lacus. Aenean nonummy hendrerit mauris. Loros tutuos naifaides De ra lo de faut Lorem ipsum dolor sit amet consectetur adipisicing
+                    img.card-image(src="../image/card-image-second.png")
+                .what-we-do-cards
+                    span.basic-heading Molestie lacus
+                    .card-divider
+                    span.card-text Lorem ipsum dolor sit amet, couer adipscing elit. Praesent vestibuluolestie lacus. Aenean nonummy hendrerit mauris. Loros tutuos naifaides De ra lo de faut Lorem ipsum dolor sit amet consectetur adipisicing
+                    img.card-image(src="../image/card-image-third.png")
+        
+        //- Products
+        .products
+            h1.green-heading Products
+            .products-box
+                .products-row.row-first
+                    .products-examples.first-example Sit amet mattis vulputate enim
+                    .products-examples.second-example Integer quis auctor elit sed
+                    .products-examples.third-example Fringilla morbi tincidunt augue
+                .products-row.row-second
+                    .products-examples.fourth-example Non tellus orci ac auctor augue
+                    .products-examples.fifth-example Hendrerit gravida rutrum 
+                    .products-examples.sixth-example Blandit aliquam etiam erat
+
+        //- Footer
+        .footer
+            .footer-column
+                h1.green-heading Products
+                span.footer-link Vestibulum
+                span.footer-link Culis lacinia
+                span.footer-link Proin dictum
+                span.footer-link Fusce euismod
+                span.footer-link Conqeust
+            .footer-column
+                h1.green-heading Technology
+                span.footer-link Vatus error sivolu
+                span.footer-link Tatem accus
+                span.footer-link Quantum protos
+                span.footer-link Folot atos
+                span.footer-link Lorem ipsum
+            .footer-column
+                h1.green-heading Company
+                span.footer-link Homepage
+                span.footer-link About us
+                span.footer-link Products
+                span.footer-link Contact us
+            .footer-column
+                .footer-contact-card
+                    .footer-contact-heading Contact
+                    .list-title
+                        i.fas.fa-phone.footer-contact-icon
+                        span.footer-contact-list-heading Phone numbers:
+                    .list-item
+                        .list-icon
+                        span.footer-list-item +44(800) 82 9152
+                    .list-item
+                        .list-icon
+                        span.footer-list-item +44(800) 53 3218
+                    .footer-contact-divider
+                    .list-title
+                        i.fas.fa-envelope-open-text.footer-contact-icon
+                        span.footer-contact-list-heading Emails:
+                    .list-item
+                        .list-icon
+                        span.footer-list-item tree.company@gmail.com
+                    .list-item
+                        .list-icon
+                        span.footer-list-item great.timber@gmail.com
