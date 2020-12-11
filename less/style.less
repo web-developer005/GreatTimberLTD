@@ -944,29 +944,25 @@ body {
     .our-timbers {
         padding: 35px;
     }
-    
-    
-
-    .footer-column > .green-heading {
-        margin-bottom: 20px;
-        font-size: 18px;
+    //Slider
+    .slider-button {
+        display: none;
     }
-    
-    .footer-link {
-        margin-bottom: 15px;
-        display: block;
-        color: white;
-        font-size: 16px;
+    .slider-subtitle {
+        width: 700px;
+        font-size: 30px;
     }
-
-    .footer {
-        width: 100%;
-        padding: 40px;
-        background-color: #353540;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-items: center;
+    .slider-title {
+        font-size: 30px;
+        &::before {
+            position: relative;
+            top: 17px;
+        }
     }
+//- About us link
+.about-us-link {
+    display: none;
+}
     .contacts-green-heading {
         font-size: 18px;
         color: @mainColor;
@@ -1058,4 +1054,25 @@ body {
         grid-column-end: 3;
     }
   
+    
+    .footer-column > .green-heading {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .footer-link {
+        margin-bottom: 15px;
+        display: block;
+        color: white;
+        font-size: 16px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 40px;
+        background-color: #353540;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
 }
