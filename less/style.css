@@ -242,6 +242,15 @@ body {
   justify-items: center;
   align-content: start;
 }
+.what-we-do-cards2 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #B4B4B4;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+}
 .card-divider {
   height: 1px;
   width: 315px;
@@ -726,6 +735,7 @@ body {
     font-size: 28px;
     color: #72AC6B;
     text-transform: uppercase;
+    margin-left: -35px;
   }
   .green-heading::after {
     content: '';
@@ -806,6 +816,47 @@ body {
   }
   .about-us-link {
     display: none;
+  }
+  .what-we-do {
+    padding: 40px 75px;
+    background-image: url(../image/paper-background.jpg);
+  }
+  .what-we-do-box {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .what-we-do-cards2 {
+    display: none;
+  }
+  .card-text {
+    margin: 15px 25px;
+    color: #4E4E4E;
+  }
+  .card-image {
+    width: 90%;
+    border: 1px solid #B4B4B4;
+    border-radius: 10px;
+  }
+  .card-divider {
+    height: 1px;
+    width: 260px;
+    margin-top: 17px;
+    background-color: #3F3F3F;
+  }
+  .what-we-do-cards {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #B4B4B4;
+    display: grid;
+    justify-items: center;
+    align-content: start;
   }
   .contacts-green-heading {
     font-size: 18px;
