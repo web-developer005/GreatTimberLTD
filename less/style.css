@@ -731,21 +731,6 @@ body {
   body {
     margin: 0 auto;
   }
-  .green-heading {
-    font-size: 28px;
-    color: #72AC6B;
-    text-transform: uppercase;
-    margin-left: -35px;
-  }
-  .green-heading::after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 49px;
-    border-radius: 10px;
-    background-color: #72AC6B;
-    margin-top: 10px;
-  }
   .header {
     height: 95px;
     width: 100%;
@@ -857,6 +842,37 @@ body {
     display: grid;
     justify-items: center;
     align-content: start;
+  }
+  .products {
+    padding: 50px 55px;
+  }
+  .products .products-box {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+  }
+  .products .products-box .products-row {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+  }
+  .products-box {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+  }
+  .products-box .products-row {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+  }
+  .products-row.row-first {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+  }
+  .products-row.row-second {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
   }
   .contacts-green-heading {
     font-size: 18px;
