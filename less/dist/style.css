@@ -472,9 +472,13 @@ body {
 }
 .why-choose-image.choose-image-first {
   background-image: url(../image/why-choose-first.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .why-choose-image.choose-image-second {
   background-image: url(../image/why-choose-second.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .why-choose-text {
   display: grid;
