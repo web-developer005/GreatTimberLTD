@@ -692,15 +692,14 @@ body {
 }
 
 
-.help-to-find-heading {
+.help-to-find-heading, .help-to-find-heading1, .help-to-find-heading2, .help-to-find-heading3 {
     margin: 10px 0;
     color: @baseHeadingColor;
 }
 
-.help-to-find-item-text {
+.help-to-find-item-text, .help-to-find-item-text1, .help-to-find-item-text2, .help-to-find-item-text3 {
     color: @baseTextColor;
 }
-
 // Contact us
 
 .contact-container {
@@ -1126,13 +1125,16 @@ body {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr 1fr;
     }
-    .help-to-find-item-text {
+    .help-to-find-item2 {
+        .help-to-find-item;
+    }
+    .help-to-find-item-text, .help-to-find-item-text1, .help-to-find-item-text2, .help-to-find-item-text3 {
         color: @baseTextColor;
         margin-top: -150px;
         grid-column-start: 2;
         grid-column-end: 3;
     }
-  
+ 
     
     .footer-column > .green-heading {
         margin-bottom: 20px;
@@ -1294,5 +1296,72 @@ body {
      .second-example, .third-example, .fourth-example, .fifth-example, .sixth-example {
         display: none;
     } 
+//Help to find
+.help-to-find {
+    padding: 35px;
+    background-image: url(../image/paper-background.jpg);
+}
 
+.help-to-find-box {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,280px);
+    grid-gap: 30px;
+}
+.help-to-find-image {
+    width: 100%;
+    height: 40%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: @baseBorderRadius;
+}
+.help-to-find-item {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.help-to-find-item2 {
+    display: none;
+}
+.help-to-find-heading {
+    margin: -10px 0;
+    color: @baseHeadingColor;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.help-to-find-heading1 {
+    .help-to-find-heading;
+}
+.help-to-find-heading2 {
+    .help-to-find-heading;
+    text-align: right;
+}
+.help-to-find-heading3 {
+    .help-to-find-heading;
+    text-align: center;
+}
+.help-to-find-item-text {
+    width: 300px;
+    color: @baseTextColor;
+    font-size: 12pt;
+    margin-top: -120px;
+    grid-column-start: 2;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.help-to-find-item-text1 {
+    .help-to-find-item-text;
+}
+.help-to-find-item-text2 {
+    .help-to-find-item-text;
+    text-align: right;
+}
+.help-to-find-item-text3 {
+    .help-to-find-item-text;
+    text-align: center;
+}
 }
