@@ -1118,6 +1118,105 @@ body {
   .sixth-example {
     display: none;
   }
+  .our-timber-rows-item.item-first,
+  .our-timber-rows-item.item-third,
+  .our-timber-rows-item.item-fourth,
+  .our-timber-rows-item.item-sixth,
+  .our-timber-rows-item.item-seventh,
+  .our-timber-rows-item.item-eighth {
+    display: none;
+  }
+  .products {
+    padding: 50px 55px;
+  }
+  .products .products-box {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+  }
+  .products .products-box .products-row {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+  }
+  .products-box {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+  }
+  .products-box .products-row {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+  }
+  .products-row.row-first {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+  }
+  .products-row.row-second {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+  }
+  .contacts-green-heading {
+    font-size: 18px;
+    color: #72AC6B;
+    position: relative;
+  }
+  .our-timber-box-row {
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .our-timber-box-row.row-first {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 150px);
+  }
+  .our-timber-box-row.row-second {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 150px);
+  }
+  .our-timber-box-row.row-third {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 150px);
+  }
+  .our-timber-rows-item {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    font-size: 14pt;
+    color: none;
+    text-shadow: none;
+  }
+  .our-timber-rows-item.item-second {
+    background-image: url(../image/products-second.png);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .our-timber-rows-item.item-fifth {
+    background-image: url(../image/products-second.png);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../image/products-fifth.png);
+  }
+  .our-timber-rows-item.item-ninth {
+    background-image: url(../image/products-second.png);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../image/products-ninth.png);
+  }
   .help-to-find {
     padding: 35px;
     background-image: url(../image/paper-background.jpg);
