@@ -980,3 +980,86 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 600px) {
+  .basic-heading {
+    font-size: 14pt;
+    color: #3F3F3F;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .what-we-do {
+    padding: 40px 20px;
+    background-image: url(../image/paper-background.jpg);
+  }
+  .what-we-do-box {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .what-we-do-cards {
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #B4B4B4;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+  }
+  .card-image {
+    display: none;
+  }
+  .card-text {
+    margin: 15px 20px;
+    color: #4E4E4E;
+    font-size: 11pt;
+  }
+  .card-divider {
+    height: 1px;
+    width: 95px;
+    margin-top: 17px;
+    background-color: #3F3F3F;
+  }
+  .products {
+    padding: 30px 20px;
+  }
+  .products .products-box {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 10px;
+  }
+  .products .products-box .products-row {
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-gap: 0px;
+  }
+  .products-row.row-first {
+    grid-template-columns: 1fr;
+  }
+  .products-row.row-second {
+    grid-template-columns: none;
+  }
+  .products-examples {
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 18pt;
+    text-shadow: 0 0 10px black;
+  }
+  .first-example {
+    background-image: url(../image/page-home-products-image-first.png);
+  }
+  .second-example,
+  .third-example,
+  .fourth-example,
+  .fifth-example,
+  .sixth-example {
+    display: none;
+  }
+}
