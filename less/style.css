@@ -322,7 +322,23 @@ body {
 .footer-column > .green-heading {
   margin-bottom: 40px;
 }
-.footer-link {
+.footer-column2 > .green-heading {
+  margin-bottom: 40px;
+}
+.footer-column3 > .green-heading {
+  margin-bottom: 40px;
+}
+.footer-link1 {
+  margin-bottom: 25px;
+  display: block;
+  color: white;
+}
+.footer-link2 {
+  margin-bottom: 25px;
+  display: block;
+  color: white;
+}
+.footer-link3 {
   margin-bottom: 25px;
   display: block;
   color: white;
@@ -748,6 +764,20 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+  .green-heading {
+    font-size: 32px;
+    color: #72AC6B;
+    text-transform: uppercase;
+  }
+  .green-heading::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 55px;
+    border-radius: 10px;
+    background-color: #72AC6B;
+    margin-top: 10px;
+  }
   .logo {
     width: 200px;
   }
@@ -979,11 +1009,32 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
   }
-  .footer-link {
+  .footer-column2 > .green-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .footer-column3 > .green-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .footer-link1 {
     margin-bottom: 15px;
     display: block;
     color: white;
     font-size: 16px;
+  }
+  .footer-link2 {
+    margin-bottom: 15px;
+    display: block;
+    color: white;
+    font-size: 16px;
+  }
+  .footer-link3 {
+    margin-bottom: 15px;
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 23.5px;
   }
   .footer {
     width: 100%;
@@ -1127,14 +1178,14 @@ body {
     display: none;
   }
   .products {
-    padding: 50px 55px;
+    padding: 20px 20px;
   }
-  .products .products-box {
+  .products-box {
     margin-top: 50px;
     display: grid;
     grid-gap: 20px;
   }
-  .products .products-box .products-row {
+  .products-row {
     display: grid;
     grid-auto-rows: 250px;
     grid-gap: 20px;
@@ -1312,5 +1363,109 @@ body {
     grid-row-start: 3;
     grid-row-end: 3;
     text-align: center;
+  }
+  .footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #353540;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-column {
+    font-size: 12pt;
+  }
+  .footer-column2 > .green-heading {
+    margin-bottom: 20px;
+    margin-left: -140px;
+    font-size: 18px;
+  }
+  .footer-column3 > .green-heading {
+    margin-bottom: 62px;
+    font-size: 18px;
+  }
+  .footer-link1 {
+    margin-bottom: 25px;
+    display: block;
+    color: white;
+  }
+  .footer-link2 {
+    margin-bottom: 25px;
+    display: block;
+    color: white;
+    margin-left: -140px;
+  }
+  .footer-link3 {
+    margin-bottom: 25px;
+    display: block;
+    color: white;
+    position: relative;
+    top: -43px;
+  }
+  .footer-contact-card {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #50505C;
+    color: #ffffff;
+    position: relative;
+    left: 45px;
+  }
+  .footer-contact-heading {
+    color: #72AC6B;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+  }
+  .footer-contact-heading::before,
+  .footer-contact-heading::after {
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: #72AC6B;
+    position: relative;
+  }
+  .footer-contact-heading::before {
+    bottom: 4px;
+    margin-right: 10px;
+  }
+  .footer-contact-heading::after {
+    bottom: 2px;
+    margin-left: 10px;
+  }
+  .list-title {
+    margin: 15px 0;
+  }
+  .footer-contact-list-heading {
+    font-size: 14pt;
+  }
+  .footer-contact-icon {
+    margin-right: 10px;
+    font-size: 26px;
+  }
+  .list-item {
+    margin-bottom: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .list-item:last-child {
+    margin-bottom: 0;
+  }
+  .list-icon {
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  .footer-contact-divider {
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
   }
 }
