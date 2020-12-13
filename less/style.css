@@ -749,6 +749,81 @@ body {
   width: 100%;
   background-image: url(../image/beta-google-maps-image.png);
 }
+@media (max-width: 1025px) {
+  .header-contacts {
+    display: none;
+  }
+  .green-heading {
+    font-size: 24pt;
+    color: #72AC6B;
+    text-transform: uppercase;
+  }
+  .green-heading::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 55px;
+    border-radius: 10px;
+    background-color: #72AC6B;
+    margin-top: 10px;
+  }
+  .what-we-do {
+    padding: 40px 25px;
+    background-image: url(../image/paper-background.jpg);
+  }
+  .what-we-do-box {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    justify-content: center;
+  }
+  .what-we-do-cards2 {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #B4B4B4;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+  }
+  .card-divider {
+    height: 1px;
+    width: 260px;
+    margin-top: 17px;
+    margin-left: 0px;
+    background-color: #3F3F3F;
+  }
+  .card-image {
+    width: 100%;
+    border: 1px solid #B4B4B4;
+    border-radius: 10px;
+  }
+  .slider-subtitle {
+    width: 685px;
+  }
+  .products {
+    padding: 40px 20px;
+  }
+  .footer {
+    width: 100%;
+    padding: 55px;
+    background-color: #353540;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer-column2 > .green-heading {
+    margin-bottom: 40px;
+    margin-left: -20px;
+  }
+  .footer-link2 {
+    margin-bottom: 25px;
+    display: block;
+    color: white;
+    margin-left: -20px;
+  }
+}
 @media (max-width: 800px) {
   body {
     margin: 0 auto;

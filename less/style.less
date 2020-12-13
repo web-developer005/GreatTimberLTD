@@ -873,7 +873,85 @@ body {
     width: 100%;
     background-image: url(../image/beta-google-maps-image.png);
 }
-
+@media (max-width: 1025px) {
+    .header-contacts {
+        display: none;
+    }
+    
+    .green-heading {
+        font-size: 24pt;
+        color: @mainColor;
+        text-transform: uppercase;
+    
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 55px;
+            border-radius: @baseBorderRadius;
+            background-color: @mainColor;
+            margin-top: 10px;
+        }
+    }
+    //What we do?
+    .what-we-do {
+        padding: 40px 25px;
+        background-image: url(../image/paper-background.jpg);
+    }
+    
+    .what-we-do-box {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        grid-template-rows: auto;
+        grid-column-gap: 15px;
+        justify-content: center;
+    }
+    .what-we-do-cards2 {
+        .what-we-do-cards;
+    }
+    
+    .card-divider {
+        height: 1px;
+        width: 260px;
+        margin-top: 17px;
+        margin-left: 0px;
+        background-color: @baseHeadingColor;
+    }
+    
+    
+    .card-image {
+        width: 100%;
+        border: @baseBorder;
+        border-radius: @baseBorderRadius;
+    }
+    //Slider 
+    .slider-subtitle {
+        width: 685px;
+    }
+    //Products
+    .products {
+        padding: 40px 20px;
+    }
+    
+    //footer
+    .footer {
+        width: 100%;
+        padding: 55px;
+        background-color: #353540;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footer-column2 > .green-heading {
+        margin-bottom: 40px;
+        margin-left: -20px
+    }
+    
+    .footer-link2 {
+        .footer-link1;
+        margin-left: -20px 
+    }
+}
 
 @media (max-width: 800px) {
     body {
