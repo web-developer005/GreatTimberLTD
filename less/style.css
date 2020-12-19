@@ -1285,6 +1285,116 @@ body {
     justify-items: center;
     align-content: start;
   }
+  .about-title-block {
+    height: 565px;
+    padding: 50px 75px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 325px 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../image/paper-background.jpg);
+  }
+  .about-title-box {
+    display: grid;
+    align-self: center;
+  }
+  .about-title-block .green-heading {
+    margin-bottom: 45px;
+    margin-top: -20px;
+  }
+  .about-title-image {
+    height: 425px;
+    width: 350px;
+    background-image: url(../image/about-us-title-block.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid #B4B4B4;
+    margin-top: -20px;
+  }
+  .about-title-heading {
+    width: 350px;
+    margin-top: 50px;
+    font-size: 16pt;
+    color: #3F3F3F;
+  }
+  .about-title-describe {
+    color: #4E4E4E;
+    font-size: 12pt;
+    margin-top: -20px;
+  }
+  .green-headings {
+    margin-left: -30px;
+  }
+  .advantage-items {
+    display: none;
+  }
+  .advantage-item-3 {
+    display: none;
+  }
+  .advantage-number {
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    font-size: 24pt;
+  }
+  .advantage-describe {
+    width: 275px;
+    margin-left: -50px;
+  }
+  .advantage-heading {
+    font-size: 16pt;
+  }
+  .advantage-text {
+    font-size: 12pt;
+  }
+  .read-more {
+    width: 160px;
+    height: 40px;
+    font-size: 14pt;
+  }
+  .why-choose-us {
+    padding: 75px;
+    background-image: url(../image/paper-background.jpg);
+  }
+  .why-choose-us-box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 75px;
+  }
+  .none2 {
+    display: none;
+  }
+  .why-choose-us-item {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 320px 1fr;
+  }
+  .why-choose-image.choose-image-first {
+    background-image: url(../image/why-choose-first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .why-choose-image.choose-image-second {
+    background-image: url(../image/why-choose-second.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .why-choose-text {
+    display: grid;
+    justify-items: start;
+  }
+  .why-choose-heading {
+    margin-bottom: 10px;
+    color: #3F3F3F;
+  }
+  .why-choose-describe {
+    color: #4E4E4E;
+  }
   .products {
     padding: 50px 55px;
   }
