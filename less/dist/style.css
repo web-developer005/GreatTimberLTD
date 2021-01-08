@@ -1009,7 +1009,7 @@ body {
   color: #72AC6B;
 }
 .quality__flex {
-  width: 43%;
+  width: 23%;
   /*MIXIN-flex*/
   display: flex;
   flex-direction: row;
@@ -1018,6 +1018,10 @@ body {
 }
 .quality__flex img {
   margin-left: 10px;
+}
+.star-icon {
+  width: 25px;
+  height: 25px;
 }
 .quality__flex2 {
   width: 20%;
@@ -2227,9 +2231,9 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  .quality__flex img {
-    width: 80%;
-    margin-left: 10px;
+  .quality__flex .star-icon {
+    width: 22%;
+    height: 22%;
   }
   .quality__flex2 {
     width: 30%;
