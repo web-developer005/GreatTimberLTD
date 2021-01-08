@@ -49,14 +49,32 @@ html(lang="en")
 
 
         //- Slider
+        //- .slider
+        //-     .slider-button.slider-button-arrow-left
+        //-         img.slider-button-image(src="../img/arrow-left.png")
+        //-     .slider-title-block
+        //-         h1.slider-title What we do?
+        //-         h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
+        //-     .slider-button.slider-button-arrow-right
+        //-         img.slider-button-image(src="../img/arrow-right.png")
         .slider
-            .slider-button.slider-button-arrow-left
-                img.slider-button-image(src="../img/arrow-left.png")
-            .slider-title-block
-                h1.slider-title What we do?
-                h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
-            .slider-button.slider-button-arrow-right
-                img.slider-button-image(src="../img/arrow-right.png")
+            .slide_viewer
+                .slide_group
+                    .slide
+                        .slider-title-block
+                            h1.slider-title What we do?
+                            h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
+                    .slide
+                    .slide
+                    .slide
+            //- .slide_buttons
+            .directional_nav
+                .previous_btn(title="Previous")
+                        .prews.slider-button.slider-button-arrow-left
+                            img.slider-button-image(src="../img/arrow-left.png", alt="")
+                .next_btn(title="Next")
+                    .left.slider-button.slider-button-arrow-right
+                            img.slider-button-image(src="../img/arrow-right.png", alt="")  
         
         //- About us link
         .about-us-link
@@ -146,3 +164,6 @@ html(lang="en")
                     .list-item
                         .list-icon
                         span.footer-list-item great.timber@gmail.com
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(src="../js/js.js")
