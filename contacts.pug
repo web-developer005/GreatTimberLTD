@@ -35,7 +35,22 @@ html(lang="en")
                 a.menu-item(href="about.html") About us
                 a.menu-item(href="products.html") Products
                 a.menu-item.menu-item-active(href="contacts.html") Contacts
-
+            //- MOBILE MENU
+            header.header_mobile
+                .hamburger
+                    button.button.hamburger__button.js-menu__toggle
+                    span.hamburger__label
+                
+                nav.menu_mobile
+                    ul.list.menu__list
+                        li.menu__group
+                            a(href="index.html").link.menu__link Homepage
+                        li.menu__group
+                            a(href="about.html").link.menu__link About us
+                        li.menu__group
+                            a(href="products.html").link.menu__link Products
+                        li.menu__group
+                            a(href="contacts.html").link.menu__link Contacts
             //- Header contacts
             .header-contacts
                 .header-contact-row

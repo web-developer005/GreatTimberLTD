@@ -35,7 +35,22 @@ html(lang="en")
                 a.menu-item(href="about.html") About us
                 a.menu-item(href="products.html") Products
                 a.menu-item(href="contacts.html") Contacts
-
+            //- MOBILE MENU
+            header.header_mobile
+                .hamburger
+                    button.button.hamburger__button.js-menu__toggle
+                    span.hamburger__label
+                
+                nav.menu_mobile
+                    ul.list.menu__list
+                        li.menu__group
+                            a(href="index.html").link.menu__link Homepage
+                        li.menu__group
+                            a(href="about.html").link.menu__link About us
+                        li.menu__group
+                            a(href="products.html").link.menu__link Products
+                        li.menu__group
+                            a(href="contacts.html").link.menu__link Contacts
             //- Header contacts
             .header-contacts
                 .header-contact-row
@@ -45,21 +60,7 @@ html(lang="en")
                 .header-contact-row
                     i.fas.fa-map-marked-alt
                     span Baker Street, 46B
-            //!- BURGER
-            //- .hamburger-meny
-            //-     input#meny__toggle(type="checkbox")
-            //-     label.meny__bth(for="meny__toggle")
-            //-         span
-            //-     ul.meny__box
-            //-         li
-            //-             a.meny__items(href="index.html") Homepage
-            //-         li
-            //-             a.meny__items(href="index.html") About us
-            //-         li
-            //-             a.meny__items(href="index.html") Products
-            //-         li
-            //-             a.meny__items(href="index.html") Contacts
-            //!- BURGER
+            
         
         
         .one-product
