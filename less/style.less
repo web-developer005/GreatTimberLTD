@@ -44,10 +44,10 @@
   .learn-more .circle .icon.arrow::before {
     position: absolute;
     content: '';
-    top: 10px;
-    right: 0;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: -4.9px;
+    right: 1px;
+    width: 1rem;
+    height: 1rem;
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
     -webkit-transform: rotate(45deg);
@@ -57,7 +57,7 @@
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 9px;
-    left: 30px;
+    left: 35px;
     right: 0;
     bottom: 0;
     color: #282936;
@@ -2563,6 +2563,7 @@ background-color: @mainColor;
         margin-top: 15px;
     }
    
+   
     //! MOBILE SLIDER
 // Slider 
 
@@ -3007,14 +3008,15 @@ background-color: @mainColor;
     }
     
     .why-choose-us-item { 
-        width: 350px;
+        width: 325px;
+        margin-left: -50px;
         display: flex;
         flex-direction: column;
     }
     .why-choose-image {
-        width: 93%;
+        width: 100%;
         height: 320px;
-        margin-left: -50px;
+    
         border-radius: @baseBorderRadius;
     }
     
@@ -3031,7 +3033,6 @@ background-color: @mainColor;
     .why-choose-text {
         width: 93%;
         display: grid;
-        margin-left: -50px;
         margin-top: -10px;
         justify-items: start;
     }
@@ -3178,8 +3179,279 @@ background-color: @mainColor;
         grid-template-rows: 150px;
     }
     
-    
-    
+    .slider3 {
+        margin: 0 auto;
+        max-width: 350px;
+        height: 200px;
+        display:block;
+      }
+      
+      .slide_viewer3 {
+        height: 145px;
+        overflow: hidden;
+        position: relative;
+        top:20px;
+      }
+      
+      .slide_group3 {
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
+      
+      .slide3 {
+        height: 145px;
+        max-width: 350px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        padding-top: 60px;
+        color: @baseColor;
+        font-size: 16pt;
+      }
+      
+      .slide3:first-child {
+        display: block;
+      }
+      
+      .slide3:nth-of-type(1) {
+        background-image: url(../image/products-first.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide3:nth-of-type(2) {
+        background-image: url(../image/products-second.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide3:nth-of-type(3) {
+        background-image: url(../image/products-third.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      
+    //   .slide_buttons {
+    //     left: 0;
+    //     top: 400px;
+    //     position: absolute;
+    //     right: 0;
+    //     text-align: center;
+    //   }
+      
+       a.slide_btn {
+        color: #4E4E4E;
+        font-size: 42px;
+        margin: 0 0.175em;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      .slide_btn:nth-of-type(1) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(2) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(3) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(4) {
+        display: none;
+      }
+      
+      
+      .slide_btn.active, .slide_btn:hover {
+        color: #72AC6B;
+        cursor: pointer;
+      } 
+      .slider4 {
+        margin: 0 auto;
+        max-width: 350px;
+        height: 200px;
+        display:block;
+      }
+      
+      .slide_viewer4 {
+        height: 145px;
+        overflow: hidden;
+        position: relative;
+        top:20px;
+      }
+      
+      .slide_group4 {
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
+      
+      .slide4 {
+        height: 145px;
+        max-width: 350px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        padding-top: 60px;
+        color: @baseColor;
+        font-size: 16pt;
+      }
+      
+      .slide4:first-child {
+        display: block;
+      }
+      
+      .slide4:nth-of-type(1) {
+        background-image: url(../image/products-fourth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide4:nth-of-type(2) {
+        background-image: url(../image/products-fifth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide4:nth-of-type(3) {
+        background-image: url(../image/products-sixth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      
+    //   .slide_buttons {
+    //     left: 0;
+    //     top: 400px;
+    //     position: absolute;
+    //     right: 0;
+    //     text-align: center;
+    //   }
+      
+       a.slide_btn {
+        color: #4E4E4E;
+        font-size: 42px;
+        margin: 0 0.175em;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      .slide_btn:nth-of-type(1) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(2) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(3) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(4) {
+        display: none;
+      }
+      
+      
+      .slide_btn.active, .slide_btn:hover {
+        color: #72AC6B;
+        cursor: pointer;
+      } 
+      .slider5 {
+        margin: 0 auto;
+        max-width: 350px;
+        height: 200px;
+        display:block;
+      }
+      
+      .slide_viewer5 {
+        height: 145px;
+        overflow: hidden;
+        position: relative;
+        top:20px;
+      }
+      
+      .slide_group5 {
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
+      
+      .slide5 {
+        height: 145px;
+        max-width: 350px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        padding-top: 60px;
+        color: @baseColor;
+        font-size: 16pt;
+      }
+      
+      .slide5:first-child {
+        display: block;
+      }
+      
+      .slide5:nth-of-type(1) {
+        background-image: url(../image/products-seventh.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide5:nth-of-type(2) {
+        background-image: url(../image/products-eighth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .slide5:nth-of-type(3) {
+        background-image: url(../image/products-ninth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      
+    //   .slide_buttons {
+    //     left: 0;
+    //     top: 400px;
+    //     position: absolute;
+    //     right: 0;
+    //     text-align: center;
+    //   }
+      
+       a.slide_btn {
+        color: #4E4E4E;
+        font-size: 42px;
+        margin: 0 0.175em;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      .slide_btn:nth-of-type(1) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(2) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(3) {
+        display: none;
+      }
+      .slide_btn:nth-of-type(4) {
+        display: none;
+      }
+      
+      
+      .slide_btn.active, .slide_btn:hover {
+        color: #72AC6B;
+        cursor: pointer;
+      } 
     
         .contacts-green-heading {
             font-size: 18px;
@@ -3199,14 +3471,17 @@ background-color: @mainColor;
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(1,150px);
+            display: none;
         } .our-timber-box-row.row-second {
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(1,150px);
+            display: none;
         } .our-timber-box-row.row-third {
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(1,150px);
+            display: none;
         }
         
         .our-timber-rows-item {
@@ -3235,6 +3510,30 @@ background-color: @mainColor;
         .our-timber-rows-item.item-second;
         background-image: url(../image/products-ninth.png);
     }
+    // Ховер READ MORE
+    .learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: '';
+        top: -4px;
+        right: 0px;
+        width: 1rem;
+        height: 1rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 9px;
+        left: 45px;
+        right: 0;
+        bottom: 0;
+        color: #282936;
+        text-align: center;
+        width: 100px;
+      }
 //Help to find
 .help-to-find {
     padding: 35px;
