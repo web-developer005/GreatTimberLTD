@@ -2433,6 +2433,9 @@ body {
     grid-auto-flow: column;
     justify-content: center;
   }
+  .contacts-contact-list {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 600px) {
   .header {
