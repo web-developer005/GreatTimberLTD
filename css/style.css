@@ -1236,8 +1236,8 @@ a.slide_btn {
   color: #A4A4A4;
 }
 .send-contacts-button {
-  height: 55px;
-  padding: 0 25px;
+  height: 45px;
+  padding: 0 15px;
   background-color: #72AC6B;
   color: #ffffff;
   border-radius: 10px;
@@ -1760,6 +1760,10 @@ body {
     display: grid;
     justify-content: center;
   }
+  .send-contacts-button {
+    height: 45px;
+    padding: 0 25px;
+  }
 }
 @media (max-width: 800px) {
   body {
@@ -2222,7 +2226,7 @@ body {
     grid-template-rows: 250px;
   }
   .contacts-green-heading {
-    font-size: 18px;
+    font-size: 20pt;
     color: #72AC6B;
     position: relative;
   }
@@ -2387,6 +2391,47 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+  }
+  .contact__block__divider {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .send-contacts-button {
+    height: 65px;
+    padding: 0 35px;
+    margin-top: 25px;
+    font-size: 20pt;
+  }
+  .contact-box {
+    margin-top: 75px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 55px 55px 175px;
+    grid-gap: 20px;
+    grid-template-areas: "name phoneNumber" "email subject" "message message" "button button";
+  }
+  .send-contacts-button {
+    justify-self: center;
+  }
+  .contacts-box {
+    grid-auto-flow: row;
+    grid-template-columns: none;
+  }
+  .contacts-contact-divider {
+    height: 1px;
+    width: 80%;
+    justify-self: center;
+  }
+  .contacts-contact-container {
+    width: 300px;
+    text-align: center;
+    display: grid;
+    justify-self: center;
+  }
+  .contacts-contact-title {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
   }
 }
 @media (max-width: 600px) {
@@ -3211,11 +3256,6 @@ body {
   .slide_btn:hover {
     color: #72AC6B;
     cursor: pointer;
-  }
-  .contacts-green-heading {
-    font-size: 18px;
-    color: #72AC6B;
-    position: relative;
   }
   .our-timber-box-row {
     display: grid;
