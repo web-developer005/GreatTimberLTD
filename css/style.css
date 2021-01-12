@@ -1086,27 +1086,27 @@ a.slide_btn {
 .our-timbers {
   padding: 75px;
 }
-.our-timber-box {
+.our-timber__box {
   margin-top: 50px;
   display: grid;
   grid-gap: 20px;
 }
-.our-timber-box-row {
+.our-timber__row {
   display: grid;
   grid-auto-rows: 300px;
   grid-gap: 20px;
   justify-content: center;
 }
-.our-timber-box-row.row-first {
+.our-timber__row.row-first {
   grid-template-columns: 20% 45% 30%;
 }
-.our-timber-box-row.row-second {
+.our-timber__row.row-second {
   grid-template-columns: 30% 45% 20%;
 }
-.our-timber-box-row.row-third {
+.our-timber__row.row-third {
   grid-template-columns: 20% 45% 30%;
 }
-.our-timber-rows-item {
+.our-timber__item {
   padding: 30px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1118,79 +1118,77 @@ a.slide_btn {
   color: #ffffff;
   text-shadow: 0 0 10px black;
 }
-.our-timber-rows-item.item-first {
+.our-timber__item.item-first {
   background-image: url(../image/products-first.png);
 }
-.our-timber-rows-item.item-second {
+.our-timber__item.item-second {
   background-image: url(../image/products-second.png);
 }
-.our-timber-rows-item.item-third {
+.our-timber__item.item-third {
   background-image: url(../image/products-third.png);
 }
-.our-timber-rows-item.item-fourth {
+.our-timber__item.item-fourth {
   background-image: url(../image/products-fourth.png);
 }
-.our-timber-rows-item.item-fifth {
+.our-timber__item.item-fifth {
   background-image: url(../image/products-fifth.png);
 }
-.our-timber-rows-item.item-sixth {
+.our-timber__item.item-sixth {
   background-image: url(../image/products-sixth.png);
 }
-.our-timber-rows-item.item-seventh {
+.our-timber__item.item-seventh {
   background-image: url(../image/products-seventh.png);
 }
-.our-timber-rows-item.item-eighth {
+.our-timber__item.item-eighth {
   background-image: url(../image/products-eighth.png);
 }
-.our-timber-rows-item.item-ninth {
+.our-timber__item.item-ninth {
   background-image: url(../image/products-ninth.png);
 }
 .help-to-find {
   padding: 50px 75px;
   background-image: url(../image/paper-background.jpg);
 }
-.help-to-find-text {
+.help-to-find__text {
   margin-top: 40px;
   color: #4E4E4E;
   font-size: 14pt;
 }
-.help-to-find-box {
+.help-to-find__box {
   margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
-.help-to-find-image {
+.help-to-find__image {
   width: 100%;
   border-radius: 10px;
 }
-.help-to-find-heading,
-.help-to-find-heading1,
-.help-to-find-heading2,
-.help-to-find-heading3 {
+.help-to-find__heading,
+.help-to-find__heading1,
+.help-to-find__heading2,
+.help-to-find__heading3 {
   margin: 10px 0;
   color: #3F3F3F;
 }
-.help-to-find-item-text,
-.help-to-find-item-text1,
-.help-to-find-item-text2,
-.help-to-find-item-text3 {
+.help-to-find__item-text,
+.help-to-find__item-text1,
+.help-to-find__item-text2,
+.help-to-find__item-text3 {
   color: #4E4E4E;
 }
 .contact-container {
   width: 100%;
   padding: 75px;
-}
-.contact-container {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   grid-gap: 100px;
 }
-.contact-form > .green-heading {
+.contact__form > .green-heading {
   margin-bottom: 50px;
 }
-.contact-box {
+.contact__box {
   margin-top: 75px;
   display: grid;
   justify-content: center;
@@ -1198,7 +1196,7 @@ a.slide_btn {
   grid-gap: 20px;
   grid-template-areas: "name phoneNumber" "email subject" "message message" ". button";
 }
-.contact-input {
+.contact__input {
   width: 300px;
   font-size: 14pt;
   padding: 10px 20px;
@@ -1220,13 +1218,13 @@ a.slide_btn {
 .message-input {
   grid-area: message;
 }
-.contact-message {
+.contact__message {
   padding: 20px;
   font-size: 12pt;
   border: 1px solid #B4B4B4;
   border-radius: 10px;
 }
-.contact-message::placeholder {
+.contact__message::placeholder {
   font-size: 14pt;
   color: #A4A4A4;
   display: block;
@@ -1235,7 +1233,7 @@ a.slide_btn {
   font-size: 14pt;
   color: #A4A4A4;
 }
-.send-contacts-button {
+.send-button {
   height: 45px;
   padding: 0 15px;
   background-color: #72AC6B;
@@ -1249,10 +1247,10 @@ a.slide_btn {
   justify-content: center;
   align-items: center;
 }
-.send-contacts-button .send-button-text {
+.send-button .send-button__text {
   margin-right: 10px;
 }
-.send-contacts-button .send-button-icon {
+.send-button .send-button__icon {
   font-size: 18pt;
 }
 .contact__block__divider {
@@ -1266,13 +1264,13 @@ a.slide_btn {
   align-content: start;
   grid-gap: 20px;
 }
-.contacts-green-heading {
+.contacts__green-heading {
   font-size: 24pt;
   color: #72AC6B;
   text-transform: uppercase;
   position: relative;
 }
-.contacts-green-heading::after {
+.contacts__green-heading::after {
   content: '';
   display: block;
   height: 4px;
@@ -1282,36 +1280,36 @@ a.slide_btn {
   position: absolute;
   right: 0;
 }
-.contacts-box {
+.contacts__box {
   width: 100%;
   padding-top: 50px;
 }
-.contacts-contact-title {
+.contacts__contact-title {
   margin-bottom: 20px;
   display: grid;
   grid-auto-flow: column;
   justify-content: start;
 }
-.contacts-contact-title .contacts-contact-icon {
+.contacts__contact-title .contacts__contact-icon {
   margin-right: 20px;
   color: #4E4E4E;
   font-size: 24pt;
 }
-.contacts-contact-title .contacts-contact-heading {
+.contacts__contact-title .contacts__contact-heading {
   color: #72AC6B;
   font-size: 24pt;
 }
-.contacts-contact-list {
+.contacts__contact-list {
   display: grid;
   margin-bottom: 30px;
 }
-.contacts-contact-list-item {
+.contacts__contact-list-item {
   max-width: 300px;
   margin-bottom: 10px;
   color: #4E4E4E;
   font-size: 16pt;
 }
-.contacts-contact-divider {
+.contacts__contact-divider {
   height: 1px;
   width: 100%;
   margin-bottom: 30px;
