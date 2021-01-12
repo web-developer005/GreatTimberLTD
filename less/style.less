@@ -606,7 +606,7 @@ body {
 }
 
 // Header contacts
-.header-contact-row {
+.header-contact__row {
     margin-bottom: 5px;
     font-size: 22px;
 
@@ -626,7 +626,7 @@ body {
     }
 }
 
-.header-contacts-divider {
+.header-contacts__divider {
     width: 220px;
     height: 1px;
     background-color: @baseTextColor;
@@ -981,7 +981,7 @@ body {
     cursor: pointer;
   } 
 // About us link
-.about-us-link {
+.about-us__link {
     height: 100px;
     width: 100%;
     padding: 0 75px;
@@ -991,26 +991,26 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    .about-us-link-title {
+    .about-us__link-title {
         color: @baseColor;
         display: grid;
         grid-auto-flow: column;
         align-items: center;
         justify-content: start;
 
-        .about-us-link-icon {
+        .about-us__link-icon {
             font-size: 28pt;
             margin-right: 15px
         }
 
-        .about-us-link-heading {
+        .about-us__link-heading {
             font-size: 20pt;
         }
     }
 
 }
 
-.about-us-link-button {
+.about-us__link-button {
     padding: 10px 15px;
     border-radius: @baseBorderRadius;
     background-color: @activeButtonColor;
@@ -1028,7 +1028,7 @@ body {
     background-image: url(../image/paper-background.jpg);
 }
 
-.what-we-do-box {
+.what-we-do__box {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 405px);
@@ -1037,7 +1037,7 @@ body {
     justify-content: center;
 }
 
-.what-we-do-cards {
+.what-we-do__cards {
     padding: 20px;
     background-color: @baseColor;
     border-radius: @baseBorderRadius;
@@ -1046,8 +1046,8 @@ body {
     justify-items: center;
     align-content: start;
 }
-.what-we-do-cards2 {
-    .what-we-do-cards;
+.what-we-do__cards2 {
+    .what-we-do__cards;
 }
 
 .card-divider {
@@ -1071,12 +1071,12 @@ body {
 .products {
     padding: 50px 75px;
 
-    .products-box {
+    .products__box {
         margin-top: 50px;
         display: grid;
         grid-gap: 20px;
 
-        .products-row {
+        .products__row {
             display: grid;
             grid-auto-rows: 250px;
             grid-gap: 20px;
@@ -1086,15 +1086,15 @@ body {
 
 }
 
-.products-row.row-first {
+.products__row.row-first {
     grid-template-columns: .9fr 1.8fr 1.3fr;
 }
 
-.products-row.row-second {
+.products__row.row-second {
     grid-template-columns: 1.3fr 1.8fr .9fr;
 }
 
-.products-examples {
+.products__examples {
     border-radius: @baseBorderRadius;
     display: grid;
     place-content: center;
@@ -1128,31 +1128,31 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.footer-column > .green-heading {
+.footer__column > .green-heading {
     margin-bottom: 40px;
 }
-.footer-column2 > .green-heading {
+.footer__column2 > .green-heading {
     margin-bottom: 40px;
 }
-.footer-column3 > .green-heading {
+.footer__column3 > .green-heading {
     margin-bottom: 40px;
 }
 
-.footer-link1 {
+.footer__link1 {
     margin-bottom: 25px;
     display: block;
     color: white;
 }
-.footer-link2 {
-    .footer-link1; 
+.footer__link2 {
+    .footer__link1; 
 }
-.footer-link3 {
-    .footer-link1; 
+.footer__link3 {
+    .footer__link1; 
 }
 
 // Footer contact card
 
-.footer-contact-card {
+.footer-contact__card {
     height: 100%;
     width: 100%;
     padding: 20px;
@@ -1161,7 +1161,7 @@ body {
     color: @baseColor;
 }
 
-.footer-contact-heading {
+.footer-contact__heading {
     color: @mainColor;
     font-size: 28px;
     font-weight: bold;
@@ -1193,11 +1193,11 @@ body {
     margin: 15px 0;
 }
 
-.footer-contact-list-heading {
+.footer-contact__list-heading {
     font-size: 24px;
 }
 
-.footer-contact-icon {
+.footer-contact__icon {
     margin-right: 10px;
     font-size: 26px;
 }
@@ -1222,7 +1222,7 @@ body {
     margin-right: 10px;
 }
 
-.footer-contact-divider {
+.footer-contact__divider {
     height: 1px;
     width: 100%;
     margin-top: 20px;
@@ -1950,7 +1950,7 @@ background-color: @mainColor;
         background-image: url(../image/paper-background.jpg);
     }
     
-    .what-we-do-box {
+    .what-we-do__box {
         margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(3, 320px);
@@ -1958,8 +1958,8 @@ background-color: @mainColor;
         grid-column-gap: 15px;
         justify-content: center;
     }
-    .what-we-do-cards2 {
-        .what-we-do-cards;
+    .what-we-do__cards2 {
+        .what-we-do__cards;
     }
     
     .card-divider {
@@ -1993,13 +1993,13 @@ background-color: @mainColor;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .footer-column2 > .green-heading {
+    .footer__column2 > .green-heading {
         margin-bottom: 40px;
         margin-left: -20px
     }
     
-    .footer-link2 {
-        .footer-link1;
+    .footer__link2 {
+        .footer__link1;
         margin-left: -20px 
     }
 
