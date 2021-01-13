@@ -1711,6 +1711,20 @@ body {
   .slider-subtitle {
     width: 685px;
   }
+  .previous_btn {
+    bottom: 0;
+    left: 40px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
   .products {
     padding: 40px 20px;
   }
@@ -2037,7 +2051,7 @@ body {
     position: relative;
     top: 17px;
   }
-  .about-us-link {
+  .about-us__link {
     display: none;
   }
   .what-we-do {
@@ -2559,16 +2573,18 @@ body {
     height: 250px;
   }
   .slider-title-block {
-    width: 375px;
+    width: 100%;
+    height: 100%;
     display: grid;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 0px;
     color: #ffffff;
     text-shadow: 0 0 10px black;
     z-index: 10;
   }
   .slider-title {
-    margin-bottom: 10px;
+    margin-top: 80px;
+    margin-left: 60px;
     color: #ffffff;
     display: grid;
     font-size: 18px;
@@ -2587,8 +2603,10 @@ body {
     top: 9px;
   }
   .slider-subtitle {
-    width: 280px;
-    font-size: 13px;
+    width: 480px;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: -70px;
   }
   .slide_viewer {
     height: 250px;
@@ -2691,31 +2709,35 @@ body {
   }
   .slider2 {
     margin: 0 auto;
-    max-width: 350px;
-    height: 200px;
+    max-width: 580px;
+    height: 230px;
     display: block;
+    padding: 20px;
   }
   .slide_viewer2 {
-    height: 145px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     top: 20px;
+    border-radius: 10px;
   }
   .slide_group2 {
     height: 100%;
     position: relative;
     width: 100%;
+    border-radius: 10px;
   }
   .slide2 {
-    height: 145px;
-    max-width: 350px;
-    border-radius: 10px;
+    max-width: 580px;
+    height: 230px;
     display: grid;
     place-content: center;
     text-align: center;
     padding-top: 60px;
     color: #ffffff;
     font-size: 16pt;
+    border-radius: 10px;
   }
   .slide2:first-child {
     display: block;
@@ -3569,18 +3591,18 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-column {
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
-    left: 40px;
+    left: 60px;
   }
   .footer-column2 > .green-heading {
     margin-bottom: 20px;
-    margin-left: -60px;
-    font-size: 18px;
+    margin-left: 0px;
+    font-size: 22px;
   }
   .footer-column3 > .green-heading {
     margin-bottom: 62px;
-    font-size: 18px;
+    font-size: 22px;
   }
   .footer-link1 {
     margin-bottom: 25px;
@@ -3599,6 +3621,7 @@ body {
     color: white;
     position: relative;
     top: -43px;
+    left: 0px;
   }
   .footer-contact-card {
     height: 100%;
@@ -3608,7 +3631,7 @@ body {
     background-color: #50505C;
     color: #ffffff;
     position: relative;
-    left: 100px;
+    left: 200px;
   }
   .footer-contact-heading {
     color: #72AC6B;
