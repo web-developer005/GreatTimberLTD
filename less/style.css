@@ -890,6 +890,9 @@ a.slide_btn {
 .footer-column3 > .green-heading {
   margin-bottom: 40px;
 }
+.footer-column4 > .green-heading {
+  margin-bottom: 40px;
+}
 .footer-link1 {
   margin-bottom: 25px;
   display: block;
@@ -3593,35 +3596,46 @@ body {
   .footer-column {
     font-size: 22px;
     position: relative;
-    left: 60px;
+    left: 20px;
   }
   .footer-column2 > .green-heading {
     margin-bottom: 20px;
-    margin-left: 0px;
-    font-size: 22px;
+    position: relative;
+    left: -90px;
   }
   .footer-column3 > .green-heading {
     margin-bottom: 62px;
+    position: relative;
+    left: -30px;
+  }
+  .footer-column4 {
     font-size: 22px;
+    position: relative;
+    left: 125px;
   }
   .footer-link1 {
     margin-bottom: 25px;
     display: block;
     color: white;
+    position: relative;
+    left: 0px;
   }
   .footer-link2 {
     margin-bottom: 25px;
     display: block;
     color: white;
-    margin-left: -60px;
+    left: 0px;
+    position: relative;
+    left: -90px;
   }
   .footer-link3 {
     margin-bottom: 25px;
     display: block;
     color: white;
+    left: 0px;
     position: relative;
     top: -43px;
-    left: 0px;
+    left: -30px;
   }
   .footer-contact-card {
     height: 100%;
@@ -3630,8 +3644,6 @@ body {
     border-radius: 10px;
     background-color: #50505C;
     color: #ffffff;
-    position: relative;
-    left: 200px;
   }
   .footer-contact-heading {
     color: #72AC6B;
@@ -3691,50 +3703,316 @@ body {
     background-color: #ffffff;
   }
 }
-@media (max-width: 600px) {
-  .contact-container {
-    width: 100%;
+@media (max-width: 375px) {
+  .prews {
+    border: 2px solid grey;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    display: grid;
+    place-content: center;
+    z-index: 10;
+  }
+  .slider-button-arrow-left {
+    padding-right: 5px;
+  }
+  .slider-button-arrow-right {
+    padding-left: 5px;
+  }
+  .slider-button-image {
+    width: 15px;
+    height: 15px;
+  }
+  .left {
+    border: 2px solid grey;
+    border-radius: 100%;
+  }
+  .slider {
     margin: 0 auto;
+    width: 100%;
+    height: 250px;
+  }
+  .slider-title-block {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 0px;
+    color: #ffffff;
+    text-shadow: 0 0 10px black;
+    z-index: 10;
+  }
+  .slider-title {
+    margin-top: 100px;
+    margin-left: 20px;
+    color: #ffffff;
+    display: grid;
+    font-size: 14px;
+    grid-auto-flow: column;
+    justify-self: start;
+  }
+  .slider-title::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 37px;
+    margin-right: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 black;
+    position: relative;
+    top: 9px;
+  }
+  .slider-subtitle {
+    max-width: 330px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -70px;
+  }
+  .slide_viewer {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide {
+    display: none;
+    height: 250px;
+    position: absolute;
+    width: 100%;
+  }
+  .slide:first-child {
+    display: block;
+  }
+  .slide:nth-of-type(1) {
+    background-image: url(../image/home-slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide:nth-of-type(2) {
+    background-image: url(../image/home-slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide:nth-of-type(3) {
+    background-image: url(../image/home-slider3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide:nth-of-type(4) {
+    background-image: url(../image/home-slider4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* .slide_buttons {
+    left: 0;
+    top: 290px;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  } */
+  a.slide_btn {
+    color: #4E4E4E;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .slide_btn.active,
+  .slide_btn:hover {
+    color: #72AC6B;
+    cursor: pointer;
+  }
+  .directional_nav {
+    height: 50px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: -135px;
+  }
+  .previous_btn {
+    bottom: 0;
+    left: 7px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+  .previous_btn,
+  .next_btn {
+    cursor: pointer;
+    height: 30px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 30px;
+  }
+  .previous_btn:hover,
+  .next_btn:hover {
+    opacity: 1;
+  }
+  .slider2 {
+    margin: 0 auto;
+    max-width: 350px;
+    height: 180px;
+  }
+  .slide_viewer2 {
+    height: 145px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide_group2 {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide2 {
+    height: 145px;
+    max-width: 350px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .slide2:first-child {
+    display: block;
+  }
+  .slide2:nth-of-type(1) {
+    background-image: url(../image/page-home-products-image-first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide2:nth-of-type(2) {
+    background-image: url(../image/page-home-products-image-second.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide2:nth-of-type(3) {
+    background-image: url(../image/page-home-products-image-third.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide2:nth-of-type(4) {
+    background-image: url(../image/page-home-products-image-fourth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide2:nth-of-type(5) {
+    background-image: url(../image/page-home-products-image-fifth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide2:nth-of-type(6) {
+    background-image: url(../image/page-home-products-image-sixth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide_buttons {
+    left: 0;
+    top: 145px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  a.slide_btn {
+    color: #4E4E4E;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .slide_btn.active,
+  .slide_btn:hover {
+    color: #72AC6B;
+    cursor: pointer;
+  }
+  .footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #353540;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .footer-column > .green-heading {
     font-size: 14px;
     position: relative;
-    left: -40px;
+    left: -10px;
+    top: -5px;
   }
   .footer-column2 > .green-heading {
     margin-bottom: 20px;
-    margin-left: -150px;
     font-size: 14px;
+    position: relative;
+    left: -70px;
+    top: 1px;
   }
   .footer-column3 > .green-heading {
     margin-bottom: 62px;
     font-size: 14px;
-    margin-left: -5px;
+    position: relative;
+    left: -30px;
+    top: -5px;
+  }
+  .footer-column4 {
+    font-size: 22px;
+    font-size: 14px;
+    position: relative;
+    left: 60px;
   }
   .footer-link1 {
     margin-bottom: 25px;
     display: block;
     color: white;
-    margin-left: -40px;
-    font-size: 14px;
+    position: relative;
+    left: -10px;
+    font-size: 12px;
   }
   .footer-link2 {
     margin-bottom: 25px;
     display: block;
     color: white;
-    margin-left: -40px;
-    font-size: 14px;
-    margin-left: -150px;
+    left: -10px;
+    font-size: 12px;
+    position: relative;
+    left: -70px;
   }
   .footer-link3 {
     margin-bottom: 25px;
     display: block;
     color: white;
-    margin-left: -40px;
-    font-size: 14px;
+    left: -10px;
+    font-size: 12px;
     position: relative;
-    top: -41px;
-    left: 35px;
+    top: -43px;
+    left: -30px;
   }
   .footer-contact-card {
     height: 100%;
@@ -3743,7 +4021,5 @@ body {
     border-radius: 10px;
     background-color: #50505C;
     color: #ffffff;
-    position: relative;
-    left: -10px;
   }
 }
