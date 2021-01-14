@@ -1194,9 +1194,7 @@ body {
     margin: 15px 0;
 }
 
-.footer-contact-list-heading {
-    font-size: 24px;
-}
+
 
 .footer-contact-icon {
     margin-right: 10px;
@@ -2000,7 +1998,146 @@ background-color: @mainColor;
     .products {
         padding: 40px 20px;
     }
+    //ABOUT US
+    .about-title-block {
+        height: 580px;
+        padding: 50px 75px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        justify-content: center;
+        align-items: start;
+        background-image: url(../image/paper-background.jpg);
+    }
     
+    .about-title-box {
+        display: grid;
+        align-self: center;
+    }
+    
+    .about-title-block .green-heading {
+        margin-bottom: 50px;
+    }
+    
+    .about-title-image {
+        height: 330px;
+        background-image: url(../image/about-us-title-block.png);
+        background-position: center;
+        border-radius: @baseBorderRadius;
+        border: @baseBorder;
+        
+    }
+    
+    .about-title-heading {
+        margin-bottom: -20px;
+        color: @baseHeadingColor;
+        font-size: 18pt;
+    }
+    
+    .about-title-describe {
+        color: @baseTextColor;
+        font-size: 12pt;
+        position: relative;
+        top: 50px;
+        
+    }
+    //OUR ADVANTAGES
+    .our-advantages {
+        width: 100%;
+        padding: 55px;
+    }
+    
+    .advantages-box {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    .advantage-item {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-gap: 20px;
+    }
+    .advantage-item3 {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-gap: 20px;
+    }
+    .advantage-number {
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        color: @mainColor;
+        border: 2px solid @mainColor;
+        display: grid;
+        place-content: center;
+        font-size: 32pt;
+    }
+    
+    .advantage-describe {
+        display: grid;
+        justify-items: start;
+    }
+    
+    .advantage-heading {
+        width: 100%;
+        margin-bottom: 10px;
+        color: @baseHeadingColor;
+        font-size: 18pt;
+    }
+    
+    .advantage-text {
+        color: @baseTextColor;
+    }
+    //WHY CHOOSE US
+    .why-choose-us {
+        padding: 55px;
+        background-image: url(../image/paper-background.jpg);
+    }
+    
+    .why-choose-us-box {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    
+    .why-choose-us-item {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 400px 1fr;
+    }
+    
+    .why-choose-image {
+        border-radius: @baseBorderRadius;
+        height: 350px;
+    }
+    
+    .why-choose-image.choose-image-first {
+        background-image: url(../image/why-choose-first.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    } .why-choose-image.choose-image-second {
+        background-image: url(../image/why-choose-second.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .why-choose-text {
+        width: 100%;
+        display: grid;
+        justify-items: start;
+        font-size: 12pt;
+    }
+    
+    .why-choose-heading {
+        width: 100%;
+        margin-bottom: 10px;
+        color: @baseHeadingColor;
+        font-size: 18pt;
+    }
     //footer
     .footer {
         width: 100%;
@@ -2424,7 +2561,7 @@ background-color: @mainColor;
 }
   //about us    
   .about-title-block {
-    height: 565px;
+    height: 550px;
     padding: 50px 75px;
     display: grid;
     grid-auto-flow: column;
@@ -2446,20 +2583,20 @@ background-color: @mainColor;
 }
 
 .about-title-image {
-    height: 425px;
-    width: 350px;
+    width: 330px;
+    height: 310px;
     background-image: url(../image/about-us-title-block.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: @baseBorderRadius;
     border: @baseBorder;
-    margin-top: -20px;
+    margin-top: 70px;
 }
 
 .about-title-heading {
     width: 350px;
-    margin-top: 50px;
+    margin-top: -20px;
     font-size: 16pt;
     color: @baseHeadingColor;
 }
@@ -2473,6 +2610,13 @@ background-color: @mainColor;
 // Our advantages
 .green-headings {
     margin-left: -30px;
+}
+.green-heading1 {
+    margin-left: -30px;
+}
+.our-advantages {
+    width: 100%;
+    padding: 50px;
 }
 .advantage-items{
     display: none;
@@ -2507,7 +2651,7 @@ background-color: @mainColor;
 
 //Why choose us
 .why-choose-us {
-    padding: 75px;
+    padding: 50px;
     background-image: url(../image/paper-background.jpg);
 }
 
@@ -2827,14 +2971,156 @@ background-color: @mainColor;
             width: 100%;
         }
     }
+      //about us    
+  .about-title-block {
+    
+    width: 100%;
+    height: 600px;
+    padding: 50px 50px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 325px 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/paper-background.jpg);
+}
+.about-title-image {
+    width: 100%;
+    height: 310px;
+    background-image: url(../image/about-us-title-block.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: @baseBorderRadius;
+    border: @baseBorder;
+    margin-top: -30px;
+}
+
+.about-title-heading {
+    width: 560px;
+    margin-top: 20px;
+    font-size: 18pt;
+    color: @baseHeadingColor;
+}
+
+.about-title-describe {
+    color: @baseTextColor;
+    font-size: 12pt;
+    margin-top:-60px;
+    padding-bottom: 20px;
+}
+// Our advantages
+.our-advantages {
+    width: 100%;
+    padding: 50px;
+}
+.our-advantages > .green-heading1 {
+    margin-left: -30px;
+}
+.advantages-box {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    padding-left: 50px;
+}
+.advantage-item3 {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    padding-left: 50px;
+}
+.advantage-number {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    color: @mainColor;
+    border: 2px solid @mainColor;
+    display: grid;
+    place-content: center;
+    font-size: 32pt;
+}
+
+.advantage-describe {
+    display: grid;
+    justify-items: start;
+}
+
+.advantage-heading {
+    margin-bottom: 10px;
+    color: @baseHeadingColor;
+    font-size: 18pt;
+}
+
+.advantage-text {
+    color: @baseTextColor;
+}
+//Why choose us
+.why-choose-us {
+    width: 100%;
+    padding: 50px;
+    background-image: url(../image/paper-background.jpg);
+}
+
+.why-choose-us-box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.none2 {
+    display: none;
+}
+.why-choose-us-item {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 320px 1fr;
+}
+.why-choose-image.choose-image-first {
+    width: 170%;
+    background-image: url(../image/why-choose-first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} .why-choose-image.choose-image-second {
+    width: 170%;
+    background-image: url(../image/why-choose-second.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why-choose-text {
+    display: grid;
+    justify-items: start;
+}
+
+.why-choose-heading {
+    width: 560px;
+    margin-bottom: 10px;
+    color: @baseHeadingColor;
+}
+
+.why-choose-describe {
+    width: 560px;
+    color: @baseTextColor;
+}    
+
 
     .contact-container {
-        width: 550px;
+        width: 560px;
         margin: 0 auto;
     }
 
     .contact-input {
-        width: 350px;
+        width: 530px;
     }
 
     .contact-box {
@@ -4059,12 +4345,12 @@ hr {
 .footer-column2 > .green-heading {
     margin-bottom: 20px;
     position: relative;
-    left: -90px;
+    left: -80px;
 }
 .footer-column3 > .green-heading {
     margin-bottom: 62px;
     position: relative;
-    left: -30px;
+    left: 20px;
 }
 .footer-column4 {
     font-size: 22px;
@@ -4081,13 +4367,13 @@ hr {
 .footer-link2 {
     .footer-link1;
     position: relative;
-    left: -90px;
+    left: -80px;
 }
 .footer-link3 {
     .footer-link1;
     position: relative;
     top:-43px;
-    left: -30px;
+    left: 20px;
 }   
 
 // Footer contact card
@@ -4459,6 +4745,103 @@ hr {
     color: #72AC6B;
     cursor: pointer;
   } 
+        //about us    
+        .about-title-block {
+    
+            width: 100%;
+            height: 600px;
+            padding: 50px 50px;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns:1fr;
+            grid-gap: 30px;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../image/paper-background.jpg);
+        }
+        .about-title-image {
+            width: 100%;
+            height: 310px;
+            background-image: url(../image/about-us-title-block.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: @baseBorderRadius;
+            border: @baseBorder;
+            margin-top: -30px;
+        }
+        
+        .about-title-heading {
+            width: 350px;
+            margin-top: 20px;
+            font-size: 18pt;
+            color: @baseHeadingColor;
+        }
+        
+        .about-title-describe {
+           display: none;
+        }
+//OUR ADVANTAGES
+.advantage-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    padding-left: 0px;
+}
+.advantage-item3 {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    padding-left: 0px;
+}
+.advantage-heading {
+    margin-bottom: 10px;
+    color: @baseHeadingColor;
+    font-size: 14pt;
+}
+
+.advantage-text {
+    color: @baseTextColor;
+    font-size: 10pt;
+}
+//WHY CHOOSE US
+.why-choose-image.choose-image-first {
+    width: 100%;
+    background-image: url(../image/why-choose-first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} .why-choose-image.choose-image-second {
+    width: 100%;
+    background-image: url(../image/why-choose-second.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why-choose-text {
+    display: grid;
+    justify-items: start;
+}
+
+.why-choose-heading {
+    font-size: 14pt;
+    width: 350px;
+    margin-bottom: 10px;
+    color: @baseHeadingColor;
+}
+
+.why-choose-describe {
+    display: none;
+}    
+
+//CONTACTS
+  .contact-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.contact-input {
+    max-width: 320px;
+}
     .footer {
         width: 100%;
         padding: 20px;
