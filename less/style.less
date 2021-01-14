@@ -1773,6 +1773,7 @@ body {
     background-image: url(../img/details__image.png);
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius:10px;
     .mixin-flex(flex, row,center,space-between);
 }
 .big-foto__arrowLeft {
@@ -2139,6 +2140,42 @@ background-color: @mainColor;
         margin-bottom: 10px;
         color: @baseHeadingColor;
         font-size: 18pt;
+    }
+    //DETAILS PAGE
+    .flex {
+        width: 100%;
+        height: 85%;
+        .mixin-flex(flex, column,center);
+        margin-top: 300px;
+    }
+    .fotos__big-foto {
+        width: 910px;
+        height: 400px;
+    }
+    .fotos_small-box {
+        width: 910px;
+        height: 200px;
+        .mixin-flex(flex, row,center,space-between);
+        margin-top: 20px;
+    }
+    .fotos__small-foto {
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/details__image-small.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    hr {
+        display: none;
+    }
+    .quality__flex2 > img {
+       margin-left: 70px;
+    }
+    .describe {
+        width: 910px;
+        height: 85%;
+        margin-left: 0px;
+        margin-top: 20px;
     }
     //footer
     .footer {
@@ -2837,20 +2874,32 @@ background-color: @mainColor;
         margin-top: 280px;
     }
     .fotos__big-foto {
-        width: 650px;
+        width: 680px;
         height: 436px;
     }
     .fotos_small-box {
-        width: 650px;
+        width: 680px;
         height: 125px;
         .mixin-flex(flex, row,center,space-between);
         margin-top: 20px;
     }
+    .fotos__small-foto {
+        width: 125px;
+        height: 125px;
+        background-image: url(../img/details__image-small.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     hr {
         display: none;
     }
+   
+    .quality__flex2 > img {
+       margin-left: 20px;
+    }
+ 
     .describe {
-        width: 650px;
+        width: 680px;
         height: 85%;
         margin-left: 0px;
         margin-top: 20px;
@@ -4254,7 +4303,7 @@ background-color: @mainColor;
     .mixin-flex(flex, column,space-evenly);
     position: relative;//по іншому не вирівнювалось
     top:20px;
-     margin-left: 7%;
+     margin-left: 5%;
 }
 .h1__green {
     color:@mainColor;
@@ -4270,10 +4319,11 @@ background-color: @mainColor;
     width: 100%;
     height: 85%;
     .mixin-flex(flex, column,center);
-    margin-top: 160px;
+    margin-top: 20px;
 }
 .fotos__big-foto {
-    width: 320px;
+    width: 540px;
+    max-width: 540px;
     height: 350px;
 }
 .fotos_small-box {
@@ -4283,14 +4333,15 @@ hr {
     display: none;
 }
 .describe {
-    width: 320px;
-    height: 85%;
+    width: 540px;
+    max-width: 540px;
+    height: 50%;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 .describe__main {
     width: 100%;
-    height: 500px;
+    height: 100%;
     .mixin-flex(flex, column,flex-start,space-evenly);
     border-bottom:2px solid #4F4F4F;;
     hr{
@@ -4882,6 +4933,56 @@ hr {
 .contact-input {
     max-width: 320px;
 }
+//DETAILS
+.box-h1 { /*блок для вирівнювання заголовку*/
+    width: 60%;
+    height: 65px;
+    .mixin-flex(flex, column,space-evenly);
+    position: relative;//по іншому не вирівнювалось
+    top:20px;
+     margin-left: 6%;
+     
+}
+.flex {
+    width: 100%;
+    height: 85%;
+    .mixin-flex(flex, column,center);
+    margin-top: 90px;
+}
+.fotos__big-foto {
+    width: 330px;
+    height: 200px;
+}
+.fotos_small-box {
+    width: 330px;
+    max-width: 330px;
+    height: 70px;
+    .mixin-flex(flex, row,center,space-between);
+    margin-top: 20px;
+}
+.fotos__small-foto {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/details__image-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+hr {
+    display: none;
+}
+
+.quality__flex2 > img {
+   margin-left: 0px;
+}
+
+.describe {
+    width: 330px;
+    max-width: 330px;
+    height: 70%;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+//FOOTER
     .footer {
         width: 100%;
         padding: 20px;
