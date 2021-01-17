@@ -13,7 +13,7 @@ html(lang="en")
 
         //- Connect the main style file
         link(rel="stylesheet", href="../less/style.css")
-
+    
         //- Site tab icon
         link(rel="shortcut icon" href="../img/website-logo.png" type="image/png")
 
@@ -36,21 +36,19 @@ html(lang="en")
                 a.menu-item(href="products.html") Products
                 a.menu-item(href="contacts.html") Contacts
             //- MOBILE MENU
-            header.header_mobile
-                .hamburger
-                    button.button.hamburger__button.js-menu__toggle
-                    span.hamburger__label
-                
-                nav.menu_mobile
-                    ul.list.menu__list
-                        li.menu__group
-                            a(href="index.html").link.menu__link Homepage
-                        li.menu__group
-                            a(href="about.html").link.menu__link About us
-                        li.menu__group
-                            a(href="products.html").link.menu__link Products
-                        li.menu__group
-                            a(href="contacts.html").link.menu__link Contacts
+           
+            //- .overlay
+            //-     nav.overlayMenu
+            //-         ul(role="menu")
+            //-             li
+            //-                 a(href="index.html" role="menuitem") Homepage
+            //-              li
+            //-                 a(href="about.html" role="menuitem") About us
+            //-              li
+            //-                 a(href="products.html" role="menuitem") Products
+            //-              li
+            //-                 a(href="contacts.html" role="menuitem") Contacts
+            //- .navBurger#navToggle(role="navigation")
             //- Header contacts
             .header-contacts
                 .header-contact__row
@@ -63,33 +61,33 @@ html(lang="en")
 
 
 
-        //- Slider
-        //- .slider
-        //-     .slider-button.slider-button-arrow-left
-        //-         img.slider-button-image(src="../img/arrow-left.png")
-        //-     .slider-title-block
-        //-         h1.slider-title What we do?
-        //-         h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
-        //-     .slider-button.slider-button-arrow-right
-        //-         img.slider-button-image(src="../img/arrow-right.png")
+        //-Slider
         .slider
-            .slide_viewer
-                .slide_group
-                    .slide
-                        .slider-title-block
-                            h1.slider-title What we do?
-                            h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
-                    .slide
-                    .slide
-                    .slide
+            .slider-button.slider-button-arrow-left
+                img.slider-button-image(src="../img/arrow-left.png")
+            .slider-title-block
+                h1.slider-title What we do?
+                h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
+            .slider-button.slider-button-arrow-right
+                img.slider-button-image(src="../img/arrow-right.png")
+        //- .slider
+        //-     .slide_viewer
+        //-         .slide_group
+        //-             .slide
+        //-                 .slider-title-block
+        //-                     h1.slider-title What we do?
+        //-                     h2.slider-subtitle From our 25 acre site located in the heart of rural Worcestershire, Fournier Timber produces an exciting range of innovative timber products, since the company was created over 30 years ago
+        //-             .slide
+        //-             .slide
+        //-             .slide
             
-            .directional_nav
-                .previous_btn(title="Previous")
-                        .prews.slider-button.slider-button-arrow-left
-                            img.slider-button-image(src="../img/arrow-left.png", alt="")
-                .next_btn(title="Next")
-                    .left.slider-button.slider-button-arrow-right
-                            img.slider-button-image(src="../img/arrow-right.png", alt="") 
+        //-     .directional_nav
+        //-         .previous_btn(title="Previous")
+        //-                 .prews.slider-button.slider-button-arrow-left
+        //-                     img.slider-button-image(src="../img/arrow-left.png", alt="")
+        //-         .next_btn(title="Next")
+        //-             .left.slider-button.slider-button-arrow-right
+        //-                     img.slider-button-image(src="../img/arrow-right.png", alt="") 
        
             
             
@@ -198,3 +196,4 @@ html(lang="en")
         script(src="../js/js.js")
         script(src="../js/mobile_js.js")
         script(src="../js/index.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
