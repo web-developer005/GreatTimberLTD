@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Great Timber LTD - Products</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../less/style.css"/>
     <link rel="shortcut icon" href="../img/website-logo.png" type="image/png"/>
     <script src="https://kit.fontawesome.com/265d7c8059.js" crossorigin="anonymous"></script>
   </head>
@@ -12,19 +12,17 @@
     <div class="header">
       <div class="logo"><img src="../img/fullsize-website-logo.png"/></div>
       <div class="menu"><a class="menu-item" href="index.html">Homepage<a class="menu-item" href="about.html">About us</a><a class="menu-item menu-item-active" href="products.html">Products</a><a class="menu-item" href="contacts.html">Contacts</a></a></div>
-      <header class="header_mobile">
-        <div class="hamburger">
-          <button class="button hamburger__button js-menu__toggle"></button><span class="hamburger__label"></span>
-        </div>
-        <nav class="menu_mobile">
-          <ul class="list menu__list">
-            <li class="menu__group"><a class="link menu__link" href="index.html">Homepage</a></li>
-            <li class="menu__group"><a class="link menu__link" href="about.html">About us</a></li>
-            <li class="menu__group"><a class="link menu__link" href="products.html">Products</a></li>
-            <li class="menu__group"><a class="link menu__link" href="contacts.html">Contacts</a></li>
+      <div class="overlay">
+        <nav class="overlayMenu">
+          <ul role="menu">
+            <li><a href="index.html" role="menuitem">Homepage</a></li>
+            <li><a href="about.html" role="menuitem">About us</a></li>
+            <li><a href="products.html" role="menuitem">Products</a></li>
+            <li><a href="contacts.html" role="menuitem">Contacts</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+      <div class="navBurger" id="navToggle" role="navigation"></div>
       <div class="header-contacts">
         <div class="header-contact-row"><i class="fas fa-phone"></i><span>+44(800) 82 9152</span></div>
         <div class="header-contacts-divider"></div>
@@ -106,7 +104,7 @@
       <div class="footer-column3">
         <h1 class="green-heading">Company</h1><span class="footer-link3">Homepage</span><span class="footer-link3">About us</span><span class="footer-link3">Products</span><span class="footer-link3">Contact us</span>
       </div>
-      <div class="footer-column">
+      <div class="footer-column4">
         <div class="footer-contact-card">
           <div class="footer-contact-heading">Contact</div>
           <div class="list-title"><i class="fas fa-phone footer-contact-icon"></i><span class="footer-contact-list-heading">Phone numbers:</span></div>

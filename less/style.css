@@ -4187,7 +4187,7 @@ body {
   }
   .navBurger {
     position: fixed;
-    right: 40px;
+    right: 20px;
     top: 35px;
     cursor: pointer;
     background: #111;
@@ -4298,7 +4298,7 @@ body {
   .overlayMenu {
     position: absolute;
     text-align: right;
-    right: 10vw;
+    right: 100px;
     bottom: 100px;
   }
   .overlayMenu ul {
